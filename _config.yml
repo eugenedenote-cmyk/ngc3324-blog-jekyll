@@ -62,15 +62,4 @@ exclude:
   - node_modules/
   - vendor/bundle/
   - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - temp-chirpy/
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+  - 
