@@ -19,35 +19,58 @@
 # in the templates via {{ site.myvariable }}.
 
 title: NGC 3324
-email: your-email@example.com
+tagline: 밤하늘의 지적 탐구
 description: >- # this means to ignore newlines until "baseurl:"
   NGC 3324 블로그는 밤하늘의 지적 탐구를 위한 공간입니다. 
   천문학, 우주, 그리고 일상의 기록을 담고 있습니다.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  eugenedenote-cmyk
+url: "https://eugenedenote-cmyk.github.io" # the base hostname & protocol for your site
+lang: ko
+timezone: Asia/Seoul
+
+github:
+  username: eugenedenote-cmyk
+
+social:
+  name: NGC 3324
+  email: your-email@example.com
+  links:
+    - https://github.com/eugenedenote-cmyk
 
 # Build settings
-theme: minima
+theme: jekyll-theme-chirpy
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-include-cache
+
+paginate: 10
+toc: true
+comments:
+  provider: # [disqus | utterances | giscus]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - temp-chirpy/
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
