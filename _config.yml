@@ -38,18 +38,16 @@ social:
     - https://github.com/eugenedenote-cmyk
 
 # Build settings
-theme: jekyll-theme-chirpy
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-archives
-  - jekyll-include-cache
 
-paginate: 10
-toc: true
-comments:
-  provider: # [disqus | utterances | giscus]
+show_excerpts: true
+header_pages:
+  - about.md
+  - categories.md
+  - archives.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -62,4 +60,15 @@ exclude:
   - node_modules/
   - vendor/bundle/
   - vendor/cache/
-  - 
+  - vendor/gems/
+  - vendor/ruby/
+  - temp-chirpy/
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
