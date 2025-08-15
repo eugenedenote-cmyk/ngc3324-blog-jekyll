@@ -22,7 +22,7 @@ title: NGC 3324
 tagline: 밤하늘의 지적 탐구
 description: >- # this means to ignore newlines until "baseurl:"
   NGC 3324 블로그는 밤하늘의 지적 탐구를 위한 공간입니다. 
-  천문학, 우주, 그리고 일상의 기록을 담고 있습니다.
+  개인적인 성취, 그리고 일상의 기록을 담고 있습니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ngc3324.com" # 구매하신 도메인
 lang: ko
@@ -33,7 +33,7 @@ github:
 
 social:
   name: NGC 3324
-  email: your-email@example.com
+  email: zor@kakao.com
   links:
     - https://github.com/eugenedenote-cmyk
 
